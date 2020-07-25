@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <title>팜</title>
+
+    <style>
+        .all{
+            width:500px;
+            margin:auto;
+        }
+
+
+        .item_intro {
+            margin: auto;
+            width: 500px;
+            font-family: 'Jua', sans-serif;
+        }
+
+        .item_text {
+            margin: auto;
+            width: 500px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .order_form{
+            width: 500px;
+            margin: auto;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .button{
+            background-color: plum;
+            color: white;
+            border: 1px white;
+            border-radius: 3px;
+            font-size: 15px;
+            padding: 8px 8px;
+            text-align: center;
+            width: 100px;
+            margin:auto;
+        }
+    </style>
+
+    <script>
+        function order() {
+            alert('주문이 완료되었습니다!')
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <br/><br/>
+<div class="all">
+    <div class="image">
+        <img style="border-radius: 10px" width="500px" src="https://image.zdnet.co.kr/2019/06/17/yoyoma_hkGMf9ONpKKal.jpg" class="img-responsive" alt="Responsive image">
+    </div>
+
+    <div class="item_intro">
+        <div class="page-header">
+         <h1>BT21 피규어 <small>가격 50,000원 / 1 세트</small></h1><br/>
+        </div>
+        <div class="item_text"
+        <p> 라인프렌즈 BT21 피규어를 판매합니다! 이번 피규어 시리즈는 BT21을 지키는 우주로봇인 ‘반' 케이스 안에 7개 캐릭터들이 무작위으로 숨겨져 있어 뽑는 재미를 더했습니다.</p>
+        </div>
+    </div>
+<br/>
+    <div class="order_form">
+
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1" style="font-weight: bold">주문자 성함</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <br/>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1" style="font-weight: bold">수량</span>
+            <select class="custom-select" id="order-count">
+                <option selected value=""> -- 수량을 선택하세요 --</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <br/>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1" style="font-weight: bold">주소</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <br/>
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1" style="font-weight: bold">전화번호</span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <br/>
+
+      <div class="order">
+        <div class="col-sm-offset-2 col-sm-10">
+           <button onclick="order()" type="submit" class="button">주문하기</button>
+        </div>
+      </div>
+    </div>
+
+        <br/>
+        <br/>
+</div>
+
+</body>
+
+
+</html>
